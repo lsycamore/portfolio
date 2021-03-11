@@ -23,10 +23,15 @@ title = "Lucas Sycamore"
     pre = "tag"
     url = "/tags/"
     weight = 3
+  [[menu.main]]
+    name = "Contact"
+    pre = "phone"
+    url = "/contact/"
+    weight = 4
 
 [params]
   dateFormat = "Jan 2, 2006"
-  homeText = "You just made a Hugo blog from scratch."
+  homeText = "Ayo welcome to my site!."
 
 [taxonomies]
   tag = "tags"
