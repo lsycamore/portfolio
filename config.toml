@@ -2,6 +2,9 @@ baseURL = "https://lsycamore.co.uk/"
 languageCode = "en-us"
 title = "Lucas Sycamore"
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [permalinks]
     blog = "/:filename/"
 # See https://feathericons.com/
@@ -31,7 +34,7 @@ title = "Lucas Sycamore"
 
 [params]
   dateFormat = "Jan 2, 2006"
-  homeText = "Ayo welcome to my site!."
+  homeText = "Ayo welcome to my site!"
 
 [taxonomies]
   tag = "tags"

@@ -1,6 +1,5 @@
 ---
 title: "Contact Me"
-layout: staticpage
 ---
 
 Contact me here:
