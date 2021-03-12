@@ -5,7 +5,7 @@ tags: [FirstPost,LookAtMeGo]
 draft: false
 ---
 
-Welcome!
-========
+<h2>Welcome!</h2>
+
 
 Hello, welcome to my new website. I will be regularly updating this so keep an eye out for changes.

@@ -1,11 +1,15 @@
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
     .container {
       max-width: {{ .Site.Params.containerMaxWidth | default "700px" | safeCSS }};
     }
     #nav a {
-      font-weight: bold;
+      font-family: 'Inter', sans-serif;       
+      font-weight: 700;
       color: inherit;
-    }
+
+        }
     #nav-border {
       border-bottom: 1px solid #212529;
     }
@@ -16,11 +20,28 @@
     #home-jumbotron {
       background-color: inherit;
     }
+
+    h1, h2, h3{
+      font-weight: 900;
+      font-family: 'Inter', sans-serif;
+    }
+
+    h2{
+      font-weight: 700;
+      font-family: 'Inter', sans-serif;
+    }
+    p{
+      font-weight:500;
+      font-family: 'Inter', sans-serif;
+    }
+
     .font-125 {
       font-size: 125%;
+
     }
     .tag-btn {
       margin-bottom: 0.3em;
+
     }
     img {
       max-width: 100%;
@@ -28,4 +49,5 @@
     img.rounded-corners{
       border-radius: 30px
     }
+
     </style>
