@@ -34,7 +34,7 @@ unsafe = true
 
 [params]
   dateFormat = "Jan 2, 2006"
-  homeText = "Ayo welcome to my site!"
-
+  homeText = "👋 Welcome to my site!"
+  footerText = "Copyright 2021"
 [taxonomies]
   tag = "tags"
