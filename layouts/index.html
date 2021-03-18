@@ -1,9 +1,11 @@
 {{ define "main" }}
-
-<div id="home-jumbotron" class="jumbotron-fluid text-center">
+<div class = "front-page">
+<div class="centered text-center">
+  <div class = "avatar">
+    <p><img src = "images/lucas.jpeg" alt="Avatar"></p>
+  </div>
   <h1>{{ .Site.Title }}</h1>
   <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
-  <p><img src = "images/dog.jpeg" class = "rounded-corners" alt="dog"></p>
 </div>
-
+</div>
 {{ end }}
