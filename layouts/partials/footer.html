@@ -1,9 +1,9 @@
-<footer class = "footer">
     {{ partial "style.html" . }}
     {{ $css := "css/bootstrap.min.css" | absURL }}
     <div class=" container">
-    <span class="font-125 text-muted">{{ .Site.Params.footerText | markdownify }}</span>
+    <span class = "text-muted">© {{ .Site.Params.footerDate | markdownify }} </span>
+    <span class=" text-muted">{{ .Site.Params.footerText | markdownify }}. Powered by <a href="https://gohugo.io/">Hugo</a>. <a href="https://github.com/lsycamore/portfolio/">Source</a></span>
+
     </div>
 
-  </footer>
 

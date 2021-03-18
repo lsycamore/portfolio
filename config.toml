@@ -35,6 +35,7 @@ unsafe = true
 [params]
   dateFormat = "Jan 2, 2006"
   homeText = "👋 Welcome to my site!"
-  footerText = "Copyright 2021"
+  footerText = " Lucas Sycamore"
+  footerDate = "2021"
 [taxonomies]
   tag = "tags"
