@@ -2,7 +2,7 @@
 title: "Contact Me"
 ---
 
-Contact me here:
+
 
 <form name="contact" method="POST" data-netlify="true">
   <p>
@@ -15,6 +15,6 @@ Contact me here:
     <label>Message: <textarea name="message"></textarea></label>
   </p>
   <p>
-    <button type="submit">Send</button>
+    <button type="submit" class = "button" >Send</button>
   </p>
 </form>
