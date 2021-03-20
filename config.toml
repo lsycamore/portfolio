@@ -37,5 +37,4 @@ unsafe = true
   homeText = "👋 Welcome to my site!"
   footerText = " Lucas Sycamore"
   footerDate = "2021"
-[taxonomies]
   tag = "tags"
