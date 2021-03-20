@@ -5,6 +5,26 @@
     <link rel="manifest" href="/site.webmanifest">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=bo">
+
+    {{ $paginator := .Paginate (where .Site.RegularPages ".Params.post" "!=" false) }}
+
+    {{ if .IsHome }}
+      {{ if eq $paginator.PageNumber 1 }}
+        <title>{{ .Title }}</title>
+        <meta name="description" content="{{ .Site.Params.description }}" />
+      {{ else }}
+        <title>{{ .Title }} | Page {{ $paginator.PageNumber }}</title>
+        <meta name="description" content="This is page {{ $paginator.PageNumber }} of our content." />
+      {{ end }}
+    {{ else }}
+      {{ if .Params.seoTitle }}
+        <title>{{ .Params.seoTitle }}</title>
+      {{ else }}
+        <title>{{ .Title }}</title>
+      {{ end }}
+      <meta name="description" content="{{ .Description }}" />
+    {{ end}}
+
     {{ hugo.Generator }}
     {{ $css := "css/bootstrap.min.css" | absURL }}
     <link rel="stylesheet" href="{{ $css }}">
