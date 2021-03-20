@@ -15,6 +15,6 @@ title: "Contact Me"
     <label>Message: <textarea name="message"></textarea></label>
   </p>
   <p>
-    <button type="submit" class = "button" >Send</button>
+    <button type="submit" class = "btn btn-sm btn-outline-dark tag-btn" >Submit</button>
   </p>
 </form>
