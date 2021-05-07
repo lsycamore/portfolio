@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class = "front-page">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/839d12ac9d.js" crossorigin="anonymous"></script>
 <div class="centered text-center">
   <div class = "avatar">
     <p><img src = "images/lucas.jpeg" alt="Avatar"></p>
@@ -8,8 +8,8 @@
   <h1>{{ .Site.Title }}</h1>
   <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
   <ul id="sociallist">
-    <li><a href="https://github.com/lsycamore" class="fa fa-github"></a></li>
-    <li><a href="https://linkedin.com/user/lsycamore" class="fa fa-linkedin"></a></li>
+    <li><a href="https://github.com/lsycamore"><i class="fab fa-github fa-2x"></i></a></li>
+    <li><a href="https://linkedin.com/user/lsycamore"><i class="fab fa-linkedin fa-2x"></i></a></li>
   </ul>
   
 </div>
