@@ -1,128 +1,130 @@
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
 
-    .container {
-      max-width: {{ .Site.Params.containerMaxWidth | default "800px" | safeCSS }};
-    }
-    #nav a {
-      font-family: 'Inter', sans-serif;       
-      font-weight: 700;
-      color: inherit;
-
-        }
-    #nav-border {
-      border-bottom: 1px solid #212529;
-    }
-    #main {
-      margin-top: 1em;
-      margin-bottom: 4em;
-    }
-    #home-jumbotron {
-      background-color: inherit;
-    }
-
-    h1, h2, h3{
-      font-weight: 900;
-      font-family: 'Inter', sans-serif;
-    }
-
-    h2{
-      font-weight: 700;
-      font-family: 'Inter', sans-serif;
-    }
-    p{
-      font-weight:500;
-      font-family: 'Inter', sans-serif;
-    }
-
-    .font-125 {
-      font-size: 125%;
-
-    }
-    .tag-btn {
-      margin-bottom: 0.3em;
-
-    }
-    img {
-      max-width: 100%;
-    }
-    img.rounded-corners{
-      border-radius: 30px
-    }
-    
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem; 
-  line-height: 2.5rem;
- text-align: center;
-  /* Set the fixed height of the footer here */
-  background-color: #f5f5f5;
-    }
-
-    #page-container {
-      position: relative;
-      min-height: 100vh;
-    }
-    #content-wrap {
-      padding-bottom: 2.5rem;    /* Footer height */
-    }
-
-    .avatar img{
-      width: 15rem;
-      height: auto;
-      border-radius: 50%;
-      @media only screen and (max-width : 768px) {
-        width: 10rem;
-      }
-    }
-
-  .centered{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  .container {
+    max-width: {{ .Site.Params.containerMaxWidth | default "800px" | safeCSS }};
   }
-
-  input[type=text] {
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-  }
-
-  input[type=email] {
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-  }
-
-  textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-  }
-
-  ul#sociallist{
-    padding: 0; 
-  }
-  ul#sociallist li {
-    display:inline;
-    padding:1%;
-  }
-  .fab:hover{
+  #nav a {
+    font-family: 'Inter', sans-serif;       
+    font-weight: 700;
     color: inherit;
+
+      }
+  #nav a:hover{
+    background-color: lightgrey;
+  }
+  #nav-border {
+    border-bottom: 1px solid #212529;
+  }
+  #main {
+    margin-top: 1em;
+    margin-bottom: 4em;
+  }
+  #home-jumbotron {
+    background-color: inherit;
+  }
+  h1, h2, h3{
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h2{
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+  }
+  p{
+    font-weight:500;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-125 {
+    font-size: 125%;
+
+  }
+  .tag-btn {
+    margin-bottom: 0.3em;
+
+  }
+  img {
+    max-width: 100%;
+  }
+  img.rounded-corners{
+    border-radius: 30px
   }
   
-  .fab {
-    color: black;
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+    line-height: 2.5rem;
+    text-align: center;
+    /* Set the fixed height of the footer here */
+    background-color: #f5f5f5;
   }
+
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+
+  .avatar img{
+    width: 15rem;
+    height: auto;
+    border-radius: 50%;
+    @media only screen and (max-width : 768px) {
+      width: 10rem;
+    }
+  }
+
+.centered{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+input[type=text] {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+input[type=email] {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+ul#sociallist{
+  padding: 0; 
+}
+ul#sociallist li {
+  display:inline;
+  padding:1%;
+}
+.fab:hover{
+  color: inherit;
+}
+
+.fab {
+  color: black;
+}
 
 </style>
