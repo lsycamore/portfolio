@@ -1,7 +1,9 @@
 {{ $js := "js/feather.min.js" | absURL }}
 {{ $bsjs := "js/bootstrap.min.js" | absURL}}
+{{ $captcha := "https://www.google.com/recaptcha/api.js"}}
 <script src="{{ $js }}"></script>
 <script src="{{ $bsjs }}"></script>
+<script src="{{ $captcha }}"></script>
 <script>
   feather.replace()
 </script>
