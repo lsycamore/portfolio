@@ -1,20 +1,18 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
 
+  nav.navbar {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+
+
   .container {
     max-width: {{ .Site.Params.containerMaxWidth | default "800px" | safeCSS }};
   }
-  #nav a {
-    font-family: 'Inter', sans-serif;       
-    font-weight: 700;
-    color: inherit;
 
-      }
-  #nav a:hover{
-    background-color: lightgrey;
-  }
   #nav-border {
-    border-bottom: 1px solid #212529;
+    border-bottom: 1px solid #000000;
   }
   #main {
     margin-top: 1em;
@@ -90,27 +88,7 @@
   transform: translate(-50%, -50%);
 }
 
-input[type=text] {
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-}
 
-input[type=email] {
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-}
-
-textarea {
-  width: 100%;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-}
 
 ul#sociallist{
   padding: 0; 
