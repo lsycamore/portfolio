@@ -32,6 +32,7 @@ unsafe = true
     url = "/contact/"
     weight = 4
 
+
 [params]
   dateFormat = "Jan 2, 2006"
   homeText = "👋 Welcome to my site!"
@@ -40,3 +41,4 @@ unsafe = true
   tag = "tags"
   description = "I am Lucas Sycamore, a student in the tech industry. I will post blogs about my adventures in new technology here. I will also include my recent projects."
   seoTitle = "Lucas Sycamore: Blog & Projects"
+  headingImage = "/images/feature-image.jpg"

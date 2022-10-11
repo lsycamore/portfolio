@@ -6,8 +6,15 @@
   <body>
     {{ partial "nav.html" . }}
     <div class="container">
+      <div id="heading">
+        {{if ne .Kind "home"}}
+          {{ partial "heading.html" . }}
+        {{ end }} 
+      </div>
+      
       <main id="main">
-       {{ block "main" . }}{{ end }}
+        {{ block "main" . }}
+        {{ end }}
       </main>
     </div>
     {{ partial "script.html" . }}

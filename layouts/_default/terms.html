@@ -1,7 +1,5 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
-
 {{ range .Data.Terms.Alphabetical }}
 <p>
   <a type="button" class="btn btn-outline-primary font-125" href="{{ .Page.Permalink }}">

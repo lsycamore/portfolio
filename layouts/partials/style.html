@@ -11,9 +11,10 @@
     max-width: {{ .Site.Params.containerMaxWidth | default "800px" | safeCSS }};
   }
 
-  #nav-border {
-    border-bottom: 1px solid #000000;
+  #heading {
+    margin-top: 1em;
   }
+
   #main {
     margin-top: 1em;
     margin-bottom: 4em;
@@ -72,7 +73,6 @@
 
   .avatar img{
     width: 15rem;
-    height: auto;
     border-radius: 50%;
     @media only screen and (max-width : 768px) {
       width: 10rem;
