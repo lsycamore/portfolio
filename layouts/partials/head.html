@@ -6,6 +6,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=bo">
 
+     {{/* Load Bootstrap SCSS. */}}
+    {{ $options := dict "enableSourceMap" true }}
+    {{ if hugo.IsProduction}}
+    {{ $options := dict "enableSourceMap" false "outputStyle" "compressed" }}
+    {{ end }}
+    {{ $styles := resources.Get "scss/styles.scss" }}
+    {{ $styles = $styles | resources.ToCSS $options }}
+    {{ if hugo.IsProduction }}
+    {{ $styles = $styles | fingerprint }}
+    {{ end }}
+    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+
+    {{ $js := "css/style.css" | absURL }}
+    <link href="/css/style.css" rel="stylesheet" />
+
     {{ $paginator := .Paginate (where .Site.RegularPages ".Params.post" "!=" false) }}
 
     {{ if .IsHome }}
@@ -26,10 +41,8 @@
     {{ end}}
 
     {{ hugo.Generator }}
-    {{ $css := "css/bootstrap.min.css" | absURL }}
-    <link rel="stylesheet" href="{{ $css }}">
+ 
     {{ $title := print .Title " | " .Site.Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
-    {{ partial "style.html" . }}
   </head>

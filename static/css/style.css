@@ -1,6 +1,4 @@
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
-  @import "bootstrap/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
 
   nav.navbar {
     font-family: 'Inter', sans-serif;
@@ -105,5 +103,3 @@ ul#sociallist li {
 .fab {
   color: black;
 }
-
-</style>
