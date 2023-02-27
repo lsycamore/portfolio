@@ -1,4 +1,4 @@
-
+enableRobotsTXT = true
 baseURL = "https://lsycamore.com/"
 languageCode = "en-us"
 title = "Lucas Sycamore"
